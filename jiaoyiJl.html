@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>交易记录</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="jilu_box">
+        <span class="jilu_active">全部</span>
+        <span>买入</span>
+        <span>卖出</span>
+        <span>视频</span>
+    </div>
+    <div class="julu_cont">
+       <div class="juliqie">
+            <div class="jilu_list">
+                <div>买入</div>
+                <div class="jilu_list_cont">
+                    <span>德邦大健康灵活配置混合</span>
+                    <span>02-01 13:53:07</span>
+                </div>
+                <div>100.00元</div>
+            </div>
+            <div class="jilu_list">
+                <div class="blue_jilu">卖出</div>
+                <div class="jilu_list_cont">
+                    <span>招商中证白酒指数分级</span>
+                    <span>10-11 21:04:10</span>
+                </div>
+                <div>325.39元</div>
+            </div>
+            <div class="jilu_list">
+                <div class="blue_jilu">视频</div>
+                <div class="jilu_list_cont">
+                    <span>招商中证白酒指数分级</span>
+                    <span>02-01 13:53:07</span>
+                </div>
+                <div>1010.00元</div>
+            </div>
+       </div>
+       <div class="juliqie">
+            <div class="jilu_list">
+                <div>买入</div>
+                <div class="jilu_list_cont">
+                    <span>德邦大健康灵活配置混合</span>
+                    <span>02-01 13:53:07</span>
+                </div>
+                <div>100.00元</div>
+            </div>
+       </div>
+       <div class="juliqie">
+           
+            <div class="jilu_list">
+                <div class="blue_jilu">卖出</div>
+                <div class="jilu_list_cont">
+                    <span>招商中证白酒指数分级</span>
+                    <span>10-11 21:04:10</span>
+                </div>
+                <div>325.39元</div>
+            </div>
+          
+       </div>
+       <div class="juliqie">
+            <div class="jilu_list">
+                <div class="blue_jilu">视频</div>
+                <div class="jilu_list_cont">
+                    <span>招商中证白酒指数分级</span>
+                    <span>02-01 13:53:07</span>
+                </div>
+                <div>1010.00元</div>
+            </div>
+       </div>
+    </div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+            $(".julu_cont .juliqie:gt(0)").hide();
+        $('.jilu_box span').click(function(){
+            $(this).addClass('jilu_active').siblings().removeClass('jilu_active');
+            index=$(this).index();
+            $(".julu_cont .juliqie").eq(index).show().siblings().hide();
+        })
+    </script>
+</body>
+</html>

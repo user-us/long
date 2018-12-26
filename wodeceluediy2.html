@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body style="background: #FFFFFF;">
+	
+	<div class="head1">
+		<a href="javascript:history.back(-2)"><img src="images/x_left.png"/></a><span>我的策略</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="mycel"><span class="checked">我的关注</span><span>我的发布</span><span>我的签约</span></div>
+	<script type="text/javascript">
+	$(function(){
+		$(".myzgcon .myqie:gt(0)").hide();
+		$(".mycel span").click(function(){
+			$(this).addClass("checked").siblings().removeClass("checked");
+			//获取序列号
+			index=$(this).index();
+			$(".myzgcon .myqie").eq(index).show().siblings().hide();
+		})
+	})
+	</script>
+	<div class="myzgcon">
+		<div class="myqie">
+			<div class="caicon">
+				<div class="perMain_video caogao_cont">
+		<dl>
+			<dt><img src="images/xiaobai.png" class="xiaobaiimg"></dt>
+			<dd>
+				<div class="video_box">
+					<h1>小白如何学习技术分析</h1>
+					<h3>基金公司要可靠、基金经理要有实力、基金必须要长时间的考验、基金评级来证明基金等级。</h3>
+					<div class="video_cont">讲师：邱老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/qieimg1.png" class="xiaobaiimg"></dt>
+			<dd>
+				<div class="video_box">
+					<h1><span class="yugao_biaoqian">预告</span>小白带你飞</h1>
+					<h3>基金必须要长时间的考验、基金评级来证明基金等级。</h3>
+					<div class="video_cont">讲师：邱老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt><img src="images/video.png" class="xiaobaiimg"></dt>
+			<dd>
+				<div class="video_box">
+					<h1>邱老师谈市场</h1>
+					<h3>市场瞬息万变</h3>
+					<div class="video_cont">讲师：邱老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+				</div>
+			</dd>
+		</dl>
+		
+		
+	</div>
+			</div>
+		</div>
+		<div class="myqie">
+			<div class="caicon">
+				<div class="perMain_video caogao_cont">
+		
+		<dl>
+			<dt><img src="images/qieimg1.png" class="xiaobaiimg"></dt>
+			<dd>
+				<div class="video_box">
+					<h1><span class="yugao_biaoqian">预告</span>小白带你飞</h1>
+					<h3>基金必须要长时间的考验、基金评级来证明基金等级。</h3>
+					<div class="video_cont">讲师：邱老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+				</div>
+			</dd>
+			<div class="caozuo_del">
+				<button>上传</button>
+				<button class="del111">删除</button>
+			</div>
+		</dl>
+		
+		
+		
+	</div>
+			</div>
+		</div>
+		<div class="myqie">
+			<div class="caicon">
+				<div class="perMain_video caogao_cont">
+		
+		
+		<dl>
+			<dt><img src="images/th2.png" class="xiaobaiimg"></dt>
+			<dd>
+				<div class="video_box">
+					<h1>首发代扣策略</h1>
+					<h3>市场瞬息万变</h3>
+					<div class="video_cont">策略提出人：刘元树<i class="icon iconfont icon-dianzan"></i>7258</div>
+				</div>
+			</dd>
+			<div class="caozuo_del">
+				<button>赎回</button>
+				<button class="del111">新增</button>
+			</div>
+		</dl>
+		
+		
+	</div>
+			</div>
+		</div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body class="bodybg">
+	<div class="head1">
+		<a href="xStrategySelection.html?a=2" target="_self"><img src="images/x_left.png"/></a><span>我的策略</span>
+	</div>
+	<div class="head_mar"></div>
+	
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		$('.caogao_cont dl').click(function(){
+			$(this).css('margin-left','-1.5rem').siblings().css('margin-left','0');
+			$(this).find('.caozuo_del').css('right','0rem');
+			$(this).siblings().find('.caozuo_del').css('right','-2rem')
+		})
+		$('.caozuo_del .del111').click(function(){
+			$(this).parent().parent().hide();
+		})
+	</script>
+</body>
+</html>

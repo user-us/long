@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>新增策略</span>
+	</div>
+	<div class="head_mar"></div>
+	<form class="add_form">
+        <div class="add_box">
+            <div class="add_list"><label>策略名称</label><input type="text" placeholder="自定义输入名称" /> </div>
+            <div class="add_list"><label>&nbsp;</label>
+                <div class="choose_biao"><span>学院派</span><span>短期</span><span>一级</span><span>自定义内容</span></div>
+            </div>
+            <div class="add_list"><label>标签内容</label></div>
+            <div class="add_list"><label>派别</label><input type="text" placeholder="学院派" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>时间期限</label><input type="text" placeholder="短期" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>风险等级</label><input type="text" placeholder="一级" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>自定义</label><input type="text" placeholder="自定义输入名称" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>参数设置</label><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>产品名称</label><input type="text" placeholder="02541" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_list"><label>产品名称</label><input type="text" placeholder="02541" /><i class="icon iconfont icon-arrow-right"></i></div>
+            <div class="add_chanpin"><button>添加产品</button></div>
+            <div class="add_list"><label>持仓比例</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>货币类</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>股票类</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>商品类</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>固定收益类</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>另类及其他</label><input type="text" placeholder="数字" /><i class="icon iconfont icon-baifenbi"></i></div>
+            <div class="add_list"><label>触发点1</label>+</div>
+            <div class="add_list"><label>时间</label>
+                <div class="choose_biao">
+                    <select class="choose_yue">
+                        <option>1月</option>
+                        <option>2月</option>
+                        <option>3月</option>
+                        <option>4月</option>
+                        <option>5月</option>
+                        <option>6月</option>
+                        <option>7月</option>
+                        <option>8月</option>
+                    </select>
+                    <select class="choose_dayu">
+                        <option>大于</option>
+                        <option>等于</option>
+                    </select>
+                    <div class="danxuan_add">
+                        <div>
+                            <input type="radio" id="female" name="sex1" />
+                            <label for="female">与</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female1" name="sex1" />
+                            <label for="female1">或</label>
+                        </div>
+                    </div>
+                    <select class="choose_yue">
+                        <option>1月</option>
+                        <option>2月</option>
+                        <option>3月</option>
+                        <option>4月</option>
+                        <option>5月</option>
+                        <option>6月</option>
+                        <option>7月</option>
+                        <option>8月</option>
+                    </select>
+                    <select class="choose_dayu">
+                        <option>大于</option>
+                        <option>等于</option>
+                    </select>
+                </div>
+            </div>
+            <div class="add_list"><label>&nbsp;</label>
+                <div class="choose_biao">
+                    <div class="danxuan_add">
+                        <div>
+                            <input type="radio" id="female2" name="sex2" />
+                            <label for="female2">与</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female3" name="sex2" />
+                            <label for="female3">或</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_list"><label>净值</label>
+                <div class="choose_biao">
+                    <input type="text"  class="write_add" placeholder="请输入" />
+                    <select class="choose_dayu">
+                        <option>大于</option>
+                        <option>等于</option>
+                    </select>
+                    <div class="danxuan_add">
+                        <div>
+                            <input type="radio" id="female4" name="sex3" />
+                            <label for="female4">与</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female5" name="sex3" />
+                            <label for="female5">或</label>
+                        </div>
+                    </div>
+                    <input type="text"  class="write_add" placeholder="请输入" />
+                    <select class="choose_dayu">
+                        <option>大于</option>
+                        <option>等于</option>
+                    </select>
+                </div>
+            </div>
+            <div class="add_list"><label>&nbsp;</label>
+                <div class="choose_biao">
+                    <div class="danxuan_add">
+                        <div>
+                            <input type="radio" id="female6" name="sex4" />
+                            <label for="female6">与</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female7" name="sex4" />
+                            <label for="female7">或</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add_list"><label>业绩比较基准</label>
+                <div class="choose_biao">
+                    <select class="choose_dayu">
+                        <option>沪深300</option>
+                        <option>上证50</option>
+                        <option>上证指数</option>
+                        <option>创业板指</option>
+                    </select>
+                    
+                   
+                </div>
+            </div>
+            <div class="add_list"><label>交易频率</label>
+                <div class="choose_biao">
+                    <input type="text"  class="write_add" placeholder="请输入" />
+                    <select class="choose_yue">
+                        <option>周</option>
+                    </select>                    
+                </div>
+            </div>
+            <div class="add_list"><label>交易量</label><input type="text" placeholder="请输入" /> </div>
+            <div class="add_list add_list1"><label>文字编辑</label><textarea>请输入</textarea> </div>
+             <div class="add_list"><label>资历证明</label>
+                <div class="choose_biao">
+                    <select class="choose_dayu">
+                        <option>身份证</option>
+                        <option>学历证</option>
+                        <option>资格证</option>
+                    </select>    <span style="border:1px solid #52B3EC;color:#52B3EC">上传</span><span style="color: #999; border: 0;">+</span>
+                </div>
+            </div>
+            <div class="add_list"><label>资产证明</label>
+                <div class="choose_biao add_list2">
+                    <select class="choose_dayu" style="width: 2.48rem;">
+                        <option>中国建设银行</option>
+                        <option>他行</option>
+                        <option>信用评分</option>
+                    </select>
+                    <a>导出&nbsp;上传</a>
+                   
+                </div>
+            </div>
+            <div class="add_list"><label>背景图</label><i class="icon iconfont icon-xiangji"></i> </div>
+            <div class="add_list add_list2"><label>视频添加</label>
+                <div class="file-box"><input type="file" class="file-btn" /></div>
+                 <a>智能诊断</a>
+            </div>
+            <div class="add_box_btn">
+                <button>草稿箱</button>
+               <a href="celuejingxuanXiangqing3.html">上 传</a> 
+            </div>
+        </div>
+    </form>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

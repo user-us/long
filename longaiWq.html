@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body class="bodybg">
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>查看往期</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="caicon caicons" style="margin-top:0">
+		<dl>
+			<a href="gongyiZxXq.html">
+				<dt><img src="images/wangqi1.png"/></dt>
+				<dd>
+					<p class="caitit">文章名称</p>
+					<p class="caicons">策略内容简单介绍策略内容简单...</p>
+					<p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+				</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="gongyiZxXq.html">
+				<dt><img src="images/wangqi2.png"/></dt>
+				<dd>
+					<p class="caitit">文章名称</p>
+					<p class="caicons">策略内容简单介绍策略内容简单...</p>
+					<p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+				</dd>
+			</a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/wangqi3.png"/></dt>
+                <dd>
+                    <p class="caitit">文章名称</p>
+                    <p class="caicons">策略内容简单介绍策略内容简单...</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/wangqi4.png"/></dt>
+                <dd>
+                    <p class="caitit">文章名称</p>
+                    <p class="caicons">策略内容简单介绍策略内容简单...</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/wangqi5.png"/></dt>
+                <dd>
+                    <p class="caitit">文章名称</p>
+                    <p class="caicons">策略内容简单介绍策略内容简单...</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/wangqi2.png"/></dt>
+                <dd>
+                    <p class="caitit">文章名称</p>
+                    <p class="caicons">策略内容简单介绍策略内容简单...</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <div class="look_more1"><img src="images/more.png" /><img src="images/page.png" /></div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function(){
+            for(var i=0;i<$('.caicon dl').length;i++){
+                if(i>6){
+                    $('.caicon dl').eq(i).hide();
+                }
+            }
+        })
+        $('.look_more1').click(function(){
+            for(var i=0;i<$('.caicon dl').length;i++){
+                $('.caicon dl').eq(i).show();
+                $('.look_more1 img').eq(1).show();
+                $('.look_more1 img').eq(0).hide();
+            }
+        })
+    </script>
+</body>
+</html>

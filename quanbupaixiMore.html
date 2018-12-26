@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>全部派系</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="wealth_head">
+		<i class="icon iconfont icon-dizhi-01 x_address"></i>北京
+		<span>
+			<i class="icon iconfont icon-sousuo x_fangda"></i>
+			<input type="text" name="" id="" value="" placeholder="智投盈" />
+			<i class="icon iconfont icon-yuyin x_mk"></i>	
+		</span>
+		<i class="icon iconfont icon-hao x_jia"></i>
+	</div>
+	<div class="selectso">
+		<ul class="selectul">
+			<li class="checked">综合</li>
+			<li>收益率</li>
+			<li>关注度</li>
+			<li>地区</li>
+			<li>好友</li>
+			<li>附近周边</li>
+		</ul>
+		<script type="text/javascript">
+		$(function(){
+			$(".about_right .qie:gt(0)").hide();
+			$(".selectul li").click(function(){
+				$(this).addClass("checked").siblings().removeClass("checked");
+				//获取序列号
+				index=$(this).index();
+				$(".about_right .qie").eq(index).show().siblings().hide();
+			})
+		})
+		</script>
+	</div>
+	<div class="paixis">
+		<div class="touzijifen">排名列表：投资可得积分</div>
+		<div class="xzhitou">
+			<div class="xzhileft">
+				<div class="xzhiying"><img src="images/top1.png" class="top"/>智投盈  （000693）</div>
+				<div class="difeng"><span>低风险</span><span>短期</span></div>
+			</div>
+			<div class="xzhiright">
+				<div class="x_shou">14.50% <img src="images/x_top.png"/></div>
+				<div class="celu">2001年以来该策略年化收益率</div>
+			</div>	
+			<div class="clear"></div>
+			<div class="x_zanren">
+				<img src="images/x_movie.png" class="x_movie"/><img src="images/x_tongxun.png" class="x_tongxun"/>
+				<span><i class="icon iconfont icon-dianzan"></i> 888</span>
+				<span class="shouca"><i class="icon iconfont icon-shoucang1"></i>已收藏</span>
+			</div>
+		</div>
+		<div class="xzhitou">
+			<div class="xzhileft">
+				<div class="xzhiying"><img src="images/top2.png" class="top"/>智投盈  （000693）</div>
+				<div class="difeng"><span>低风险</span><span>短期</span></div>
+			</div>
+			<div class="xzhiright">
+				<div class="x_shou">14.50% <img src="images/x_top.png"/></div>
+				<div class="celu">2001年以来该策略年化收益率</div>
+			</div>	
+			<div class="clear"></div>
+			<div class="x_zanren">
+				<img src="images/x_movie.png" class="x_movie"/><img src="images/x_tongxun.png" class="x_tongxun"/>
+				<span><i class="icon iconfont icon-dianzan"></i> 888</span>
+				<span class="shouca"><i class="icon iconfont icon-shoucang1"></i>已收藏</span>
+			</div>
+		</div>
+		<div class="xzhitou">
+			<div class="xzhileft">
+				<div class="xzhiying"><img src="images/top3.png" class="top"/>智投盈  （000693）</div>
+				<div class="difeng"><span>低风险</span><span>短期</span></div>
+			</div>
+			<div class="xzhiright">
+				<div class="x_shou">14.50% <img src="images/x_top.png"/></div>
+				<div class="celu">2001年以来该策略年化收益率</div>
+			</div>	
+			<div class="clear"></div>
+			<div class="x_zanren">
+				<img src="images/x_movie.png" class="x_movie"/><img src="images/x_tongxun.png" class="x_tongxun"/>
+				<span><i class="icon iconfont icon-dianzan"></i> 888</span>
+				<span class="shouca"><i class="icon iconfont icon-shoucang1"></i>已收藏</span>
+			</div>
+		</div>
+		<div class="xzhitou">
+			<div class="xzhileft">
+				<div class="xzhiying">智投盈  （000693）</div>
+				<div class="difeng"><span>低风险</span><span>短期</span></div>
+			</div>
+			<div class="xzhiright">
+				<div class="x_shou">14.50% <img src="images/x_top.png"/></div>
+				<div class="celu">2001年以来该策略年化收益率</div>
+			</div>	
+			<div class="clear"></div>
+			<div class="x_zanren">
+				<img src="images/x_movie.png" class="x_movie"/><img src="images/x_tongxun.png" class="x_tongxun"/>
+				<span><i class="icon iconfont icon-dianzan"></i> 888</span>
+			</div>
+		</div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>策略精选</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="wealth_head">
+		<i class="icon iconfont icon-dizhi-01 x_address"></i>北京
+		<span>
+			<i class="icon iconfont icon-sousuo x_fangda"></i>
+			<input type="text" name="" id="" value="" placeholder="理财" />
+			<i class="icon iconfont icon-yuyin x_mk"></i>	
+		</span>
+		<i class="icon iconfont icon-hao x_jia"></i>
+	</div>
+	<div class="selectso">
+		<ul class="selectul">
+			<li class="checked">综合</li>
+			<li>收益率</li>
+			<li>关注度</li>
+			<li>地区</li>
+			<li>好友</li>
+			<li>附近周边</li>
+		</ul>
+		<script type="text/javascript">
+		$(function(){
+			$(".selectul li").click(function(){
+				$(this).addClass("checked").siblings().removeClass("checked");
+			})
+		})
+		</script>
+		<div class="serchcon">
+			<div class="searchtit">历史搜索</div>
+			<div class="searchcon"><span>内容</span><span>内容</span><span>内容</span><span>内容</span><span>内容</span><span>内容</span></div>
+		</div>
+		<div class="serchcon">
+			<div class="searchtit">热门推荐</div>
+			<div class="searchcon"><span>内容</span><span>内容</span><span>内容</span><span>内容</span><span>内容</span><span class="checked">内容</span></div>
+		</div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body class="bodybg">
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>龙爱中国</span>
+	</div>
+	<div class="head_mar"></div>
+	<img src="images/zxxq.png" alt=""  class="zhiimg1"/>
+    <img src="images/zxxq2.png"  class="zhiimg1" />
+    <div class="zxxq_cont">
+        <h2>山村幼儿园计划</h2>
+        <div>
+            为贫困地区3-6岁儿童提供学前教育
+        </div>
+    </div>
+    <div class="zxxq_cont">
+        <h2><img src="images/jigou.png" style="width:0.33rem;height:0.29rem;margin-right:0.1rem;" />发起与善款接收机构</h2>
+        <div>
+            中国发展研究基金会<img src="images/xin.png" style="width:0.2rem;height:0.16rem;margin-left:0.1rem;" />
+        </div>
+    </div>
+    <div class="zxxq_cont">
+        <h2><img src="images/xiangmu.png" style="width:0.29rem;height:0.25rem;margin-right:0.1rem;" />项目说明</h2>
+        <div>
+           山村幼儿园计划为贫困地区3-6岁儿童提供有质量的学前教育。
+            <div class="xiangmu_moress">
+                <img src="images/zxxq_img1.png" style="width:100%;margin: 0.2rem 0" />
+                山村幼儿园计划为贫困地区3-6岁儿童提供有质量的学前教育。
+                <img src="images/zxxq_img2.png" style="width:100%;margin: 0.2rem 0"/>
+                山村幼儿园计划为贫困地区3-6岁儿童提供有质量的学前教育。
+            </div>
+        </div>
+        <div class="more_xiangmu"><img src="images/more1.png" style="width:2.66rem;height:0.25rem;" /></div>
+    </div>
+    <div class="zxxq_cont" style="padding-bottom:1rem;">
+        <h2><img src="images/liuyan.png" style="width:0.29rem;height:0.25rem;margin-right:0.1rem;" />爱心留言(1225条)</h2>
+        <div class="shiipin_allcont" style="display:block;padding-bottom:0">
+            <dl class="pl_box">
+                <dt class="pl_tx"><img src="images/pl.png" /></dt>
+                <dd class="pl_cont">
+                    <div>
+                        <h1>张一山</h1>
+                        <p class="pl_time">2015-10-18 02:16</p>
+                        <p class="pl_conts">此处省略好多字</p>
+                    </div>
+                </dd>
+                <span class="dianzan_num"><i class="icon iconfont icon-zan"></i> 7025</span>
+            </dl>
+            <dl class="pl_box">
+                <dt class="pl_tx"><img src="images/pl.png" /></dt>
+                <dd class="pl_cont">
+                    <div>
+                        <h1>张一山</h1>
+                        <p class="pl_time">2015-10-18 02:16</p>
+                        <p class="pl_conts">此处省略好多字</p>
+                    </div>
+                </dd>
+                <span class="dianzan_num"><i class="icon iconfont icon-zan"></i> 7025</span>
+            </dl>
+            <dl class="pl_box">
+                <dt class="pl_tx"><img src="images/pl.png" /></dt>
+                <dd class="pl_cont">
+                    <div>
+                        <h1>张一山</h1>
+                        <p class="pl_time">2015-10-18 02:16</p>
+                        <p class="pl_conts">此处省略好多字</p>
+                    </div>
+                </dd>
+                <span class="dianzan_num"><i class="icon iconfont icon-zan"></i> 7025</span>
+            </dl>
+        </div>
+        <div class="more_xiangmu"><img src="images/more.png" style="width:1.54rem;height:0.57rem;" /></div>
+    </div>
+    <div class="juankaun_tan">
+        <div class="juankuan_cont">
+            <img src="images/juankuan1.png" style="width:6.74rem;" class="closessss" />
+            <div class="juankuan_money">
+                <button class="button_active">20元</button>
+                <button>50元</button>
+                <button>100元</button>
+                <button>500元</button>
+                <button>1000元</button>
+                <button>2000元</button>
+            </div>
+            <div class="juankuan_zidy"><input type="text" placeholder="自定义金额" />元</div>
+            <div class="niming">
+                <input type="radio" id="female8" name="sex5" />
+                <label for="female8">匿名捐赠</label>
+            </div>
+            <div class="agree_juan" style="background:#52B3EC;color:#fff;text-align:center"> 同意捐赠</div>
+        </div>
+    </div>
+    <div class="write_pls" style="background:#52B3EC;color:#fff;text-align:center"> 爱心捐</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $('.more_xiangmu').click(function(){
+            if($('.xiangmu_moress').css('display')=='none'){
+                $('.xiangmu_moress').show()
+            } else {
+                $('.xiangmu_moress').hide()
+            }
+        })
+        $('.write_pls').click(function(){
+            $('.juankaun_tan').show();
+            $('.closessss').click(function(){
+                $('.juankaun_tan').hide();
+            })
+        })
+        $('.juankuan_money button').click(function(){
+            $(this).addClass('button_active').siblings().removeClass('button_active');
+        })
+    </script>
+</body>
+</html>

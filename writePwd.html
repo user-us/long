@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>请输入支付密码</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="write_pwd">
+        <h1>请输入支付密码，用于支付验证</h1>
+        <div id="wrap">
+            <input type="password" />
+            <input type="password" />
+            <input type="password" />
+            <input type="password" />
+            <input type="password" />
+            <input type="password"  class="input1" />
+        </div>
+    </div>
+    <div class="pay_tanchuang">
+        <div class="tanchuang_cont123"> 
+            <h2>是否取消付款</h2>
+            <div class="pl_btn quxiao_btn">
+                <button>取消</button>
+                <button>确认</button>
+            </div>
+        </div>
+    </div>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+       onload = function(){
+        var txts = wrap.getElementsByTagName("input");
+        for(var i = 0; i<txts.length;i++){
+            var t = txts[i];
+            t.index = i;
+            t.setAttribute("readonly", true);
+            t.onkeyup=function(){
+                this.value=this.value.replace(/^(.).*$/,'$1');
+                var next = this.index + 1;
+                if(next > txts.length - 1) return;
+                txts[next].removeAttribute("readonly");
+                txts[next].focus();
+            }
+        }
+        $('.input1').bind('input',function(){
+            if($(this).val() != ''){
+                window.location.href="qianyuexinxi.html";
+            }
+        })
+        txts[0].removeAttribute("readonly");
+    }
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>账户管理</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="perMain_video caogao_cont">
+		<dl style="border-bottom:0">
+			<dt style="width:100%;height:2.36rem"><img src="images/yinhangka.png" style="width:100%;" /></dt>
+			<div class="caozuo_del caozuo_del2" >
+				<button>删除</button>
+				<button class="del111">变更</button>
+			</div>
+        </dl>
+        <dl  style="border-bottom:0">
+            <dt style="width:100%;height:2.36rem"><img src="images/yinhangka.png" style="width:100%;" /></dt>
+            <div class="caozuo_del caozuo_del2">
+                <button>删除</button>
+                <button class="del111">变更</button>
+            </div>
+        </dl>
+    </div>
+    <div class="tanchuang_box" style="display:none">
+        <div class="tanchuang_cont123">
+            <h2 style="font-size: 0.3rem;font-weight: normal">是否删除此银行卡？</h2>
+            <div class="quxiao_btn del_btns">
+                <button>否</button>
+                <button>是</button>
+            </div>
+        </div>
+    </div>
+    <div class="add_yhk"><a href="addYhk.html">添加新银行卡</a></div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		$('.caogao_cont dl').click(function(){
+			$(this).css('margin-left','-1.5rem').siblings().css('margin-left','0');
+			$(this).find('.caozuo_del').css('right','0rem');
+			$(this).siblings().find('.caozuo_del').css('right','-2rem');
+            
+            var index=$(this).index();
+            console.log(index)
+            $('.caozuo_del2').click(function(){
+            $('.tanchuang_box').show();
+            $('.del_btns button').eq(1).click(function(){
+                $('.caogao_cont dl').eq(index).hide();
+                $('.tanchuang_box').hide();
+            })
+        })
+		})
+		$('.caozuo_del .del111').click(function(){
+			$(this).parent().parent().hide();
+		})
+        
+	</script>
+</body>
+</html>

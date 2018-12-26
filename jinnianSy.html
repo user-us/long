@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>收益明细</span>
+	</div>
+	<div class="head_mar"></div>
+	
+	<div class="peiqie">
+        <div class="jinnian_box">今年来
+            <select onchange="window.open(this.options[this.selectedIndex].value,target='_self')">
+                <option value='leijiSy.html'>累计收益</option>
+                <option value='jinnianSy.html' selected="selected">今年以来</option>
+            </select>
+        </div>
+        <div class="jiaoyi_conts shouyi_bot">
+            <dl>
+                <dt>78.3</dt>
+                <dd>余额</dd>
+            </dl>
+            <dl>
+                <dt>0.00</dt>
+                <dd>昨日收益</dd>
+            </dl>
+            <dl>
+                <dt>-19.3</dt>
+                <dd>持有收益</dd>
+            </dl>
+        </div>
+		<div class="shouyi_img"><img src="images/shouyi.png" /></div>
+		<div class="peiqies" >
+			<div class="peiq1">
+				<div class="peiq2">
+					<div class="peitit" style="font-weight: bold;font-size: .32rem">今年来收益走势</div>
+					<div class="peing1"  id="container" style="width:92%;height:300px"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/echarts.js"></script>
+</body>
+</html>

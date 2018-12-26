@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>请选择基金</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="xianshang_tit">
+        <span>基金名称</span>
+        <span>基金代码</span>
+    </div>
+    <div class="jianzhen_cont jianzhen_cont2">
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>策略名称策略名称 <span>16254 </span></a></p>
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>策略名称 <span>13587</span></a></p>
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>投策略名称<span>15874</span></a></p>
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>投策略名称<span>16548</span></a></p>
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>投策略名称<span>15488</span></a></p>
+        <p><a href="javascript:;"><i class="icon iconfont icon-danxuan"></i><i class="icon iconfont icon-danxuan"></i>策略名称 <span>16478</span></a></p>
+        
+    </div>
+    <div class="jianzhen_btn">确定</div>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function(){
+            $('.jianzhen_cont2 p').eq(0).find('i').eq(1).hide().siblings().show();
+            $('.jianzhen_cont2 p i').click(function(){
+                $(this).hide().siblings().show();
+            })
+        })
+    </script>
+</body>
+</html>

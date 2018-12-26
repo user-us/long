@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+</head>
+<body class="bodybg">
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>发布</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="write_pwd">
+        <div class="fabu_cont">
+            <textarea>合适的话题，能让更多的人看到</textarea>
+        </div>
+        <div class="add_list"><label>上传图片</label><i class="icon iconfont icon-xiangji"></i> </div>
+		<div class="add_list fabu_list"><label>是否收费</label><i class="icon iconfont icon-kaiguan-copy"></i><i class="icon iconfont icon-kaiguan"></i></div>
+		<div class="add_list"><label>收费金额</label><input type="text" placeholder="请输入" /></div>
+		<div class="add_list"><label>选择策略</label><span>2111</span><i class="icon iconfont icon-arrow-right"></i></div>
+		<div class="fabu_list1">
+			<span>策略名称1</span>
+			<span>策略名称2</span>
+			<span>策略名称3</span>
+		</div>
+		<div class="add_box_btn">
+			<button>草稿箱</button>
+			<button>上 传</button>
+		</div>
+		<div class="tanchuang_box">
+			<div class="tanchuang_cont">
+				<div class="tanchuang_title"><span class="fabu_quxiao">取消</span>预约类型<span class="fabu_sure">确定</span></div>
+				<ul class="tanchuang_ul">
+					<li>预约我的客户经理健诊</li>
+					<li>预约网点健诊</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+   <script>
+	   $('.fabu_list i').click(function(){
+		   $(this).hide().siblings().show();
+	   })
+	   $('.fabu_list1 span').click(function(){
+		   $(this).hide();
+	   })
+   </script>
+
+</body>
+</html>

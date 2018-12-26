@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>公益助学</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="caicon caicons" style="margin-top:0">
+		<dl>
+			<a href="gongyiZxXq.html">
+				<dt><img src="images/gongyiimg1.png"/></dt>
+				<dd>
+					<p class="caitit">山村幼儿园计划</p>
+					<p class="caicons">为贫困地区3-6岁儿童提供学前教育</p>
+					<p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+				</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="gongyiZxXq.html">
+				<dt><img src="images/gongyiimg2.png"/></dt>
+				<dd>
+					<p class="caitit">为孩子筹建梦想中心</p>
+                    <p class="caicons">每汇聚20万建设一间梦想中心教室</p>
+					<p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+				</dd>
+			</a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg3.png"/></dt>
+                <dd>
+                   <p class="caitit">帮宝宝打败白血病</p>
+                    <p class="caicons">与优秀医院合作资助孤贫血液病</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg4.png"/></dt>
+                <dd>
+                    <p class="caitit">肿瘤血液病紧急救治</p>
+                    <p class="caicons">帮助肿瘤贫困患儿得到应有治疗</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/wangqi5.png"/></dt>
+                <dd>
+                    <p class="caitit">健康饮水计划</p>
+                    <p class="caicons">为贫困地区学校安装健康饮水设备</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg5.png"/></dt>
+                <dd>
+                    <p class="caitit">无痕环境公益课堂</p>
+                    <p class="caicons">城市环境教育公益行动</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg4.png"/></dt>
+                <dd>
+                   <p class="caitit">为抗战英烈建家园</p>
+                    <p class="caicons">让每位抗战英魂回家</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg4.png"/></dt>
+                <dd>
+                    <p class="caitit">你是我的眼</p>
+                    <p class="caicons">为角膜盲症患者点亮希望</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="gongyiZxXq.html">
+                <dt><img src="images/gongyiimg4.png"/></dt>
+                <dd>
+                   <p class="caitit">无痕环境公益课堂</p>
+                    <p class="caicons">城市环境教育公益行动</p>
+                    <p class="carfo"><i class="icon iconfont icon-heart xin"></i></i></i>8888份爱心</p>
+                </dd>
+            </a>
+        </dl>
+       
+        <div class="look_more1"><img src="images/more.png" /><img src="images/page.png" /></div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $(function(){
+            for(var i=0;i<$('.caicon dl').length;i++){
+                if(i>6){
+                    $('.caicon dl').eq(i).hide();
+                }
+            }
+        })
+        $('.look_more1').click(function(){
+            for(var i=0;i<$('.caicon dl').length;i++){
+                $('.caicon dl').eq(i).show();
+                $('.look_more1 img').eq(1).show();
+                $('.look_more1 img').eq(0).hide();
+            }
+        })
+    </script>
+</body>
+</html>

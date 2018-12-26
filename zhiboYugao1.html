@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>直播预告</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="zhibo_tishi1">
+        <div class="zhibo_start">
+            距离开始还有 <span>02:28:39</span>
+        </div>
+        <video poster="images/th2.png"  class="zhiimg1" src=""></video>
+        <div class="guankan_num">
+            技术大咖带你飞
+            <span>预约观看人数：888</span>
+        </div>
+    </div>
+	<div class="tab_zhuan">
+        <span class="zhuan_active">简介</span>
+        <span>往期</span>
+        <span>评论</span>
+    </div>
+   
+	<div>
+        <div class="shiipin_allcont">
+            <div class="jiangshi_cont">
+                <dl class="jiangshi1">
+                    <dt><img src="images/ths2.png" /></dt>
+                    <dd>
+                        <div class="juti_jiangshi">
+                            <h2>刘老师 <span><img src="images/x_movie.png" class="x_movie"/>186 <i class="icon iconfont icon-zan"></i>185</span></h2>
+                            <div>厦门建行资深基金专家。</div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="shipin_jieshao">
+                    <span>视频介绍：</span>基金经理要有实力、基金必须要长时间的考验、基金评级来证明基金等级。<a href="#">详情</a>
+                </div>
+            </div>
+            <div class="xzhitou">
+                <div class="xzhileft">
+                    <div class="xzhiying">智投盈  （000693）</div>
+                    <div class="difeng"><span>低风险</span><span>短期</span></div>
+                </div>
+                <div class="xzhiright">
+                    <div class="x_shou">14.50% <img src="images/x_top.png"/></div>
+                    <div class="celu">2001年以来该策略年化收益率</div>
+                </div>	
+                <div class="clear"></div>
+                <div class="x_zanren">
+                    <img src="images/x_movie.png" class="x_movie"/><img src="images/x_tongxun.png" class="x_tongxun"/>
+                    <span><img src="images/x_zan1.png"/> 888</span>
+                </div>
+            </div>
+            <div class="think_foot">购买即可获得10积分<span>一键签约跟投</span></div>
+        </div>
+        <div class="shiipin_allcont">
+            <ul class="shipin_wq">
+                <li>视频名称：首发代扣策略<span><i class="icon iconfont icon-bofang"></i>32:33:16</span></li>
+                <li>视频名称：建行谈市<span><i class="icon iconfont icon-bofang"></i>32:33:16</span></li>
+            </ul>
+        </div>
+        <div class="shiipin_allcont">
+            <dl class="pl_box">
+                <dt class="pl_tx"><img src="images/pl.png" /></dt>
+                <dd class="pl_cont">
+                    <div>
+                        <h1>张一山</h1>
+                        <p class="pl_time">2015-10-18 02:16</p>
+                        <p class="pl_conts">此处省略好多字</p>
+                    </div>
+                </dd>
+                <span class="dianzan_num"><i class="icon iconfont icon-zan"></i> 7025</span>
+            </dl>
+            <dl class="pl_box">
+                <dt class="pl_tx"><img src="images/pl.png" /></dt>
+                <dd class="pl_cont">
+                    <div>
+                        <h1>张一山</h1>
+                        <p class="pl_time">2015-10-18 02:16</p>
+                        <p class="pl_conts">此处省略好多字</p>
+                    </div>
+                </dd>
+                <span class="dianzan_num"><i class="icon iconfont icon-zan"></i> 7025</span>
+            </dl>
+            <div class="shuinput"><input type="text" placeholder="写评论" /><i class="icon iconfont icon-biaoqing"></i>
+                </div>
+        </div>
+    </div>
+    
+            <div class="think_foot">购买即可获得10积分<span>一键签约跟投</span></div>
+    <div class="pay_tanchuang">
+        <div class="paytan_cont">
+            <div class="title1_1">观看此视频需支付10元</div>
+            <div class="title1_2">观看此视频可获得10积分</div>
+            <div class="pl_btn">
+                <button>取消</button>
+                <button>确认</button>
+            </div>
+        </div>
+    </div>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+        $('.tab_zhuan span').click(function(){
+            $(this).addClass('zhuan_active').siblings().removeClass('zhuan_active');
+            $('.shiipin_allcont').eq($(this).index()).show().siblings().hide();
+        })
+        $('.zhiimg1').click(function(){
+            $('.pay_tanchuang').show();
+        })
+        $('.pl_btn').click(function(){
+            $('.pay_tanchuang').hide();
+        })
+    </script>
+    <script>
+            $('video').click(function(element){
+                $(this).parent().addClass('quanping');
+                $(this).attr('controls','true')
+            })
+            $('.perMain_video .quanping').click(function(){
+                $(this).removeClass('quanping');
+            })
+        </script>
+</body>
+</html>

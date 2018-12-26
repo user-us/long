@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--bootstrap框架↓-->
+<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+<!--本页面CSS↓-->
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/style1.css">
+<!--bootstrap框架↓-->
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+<!--导航下拉↓-->
+<script type="text/javascript" src="js/xiala.js"></script>
+<!--日历-->
+<script src="js/date.js"></script>
+<title>中国建设银行-区域链</title>
+</head>
+<body>
+<!--头部开始-->
+	<header class="head">
+		<div class="head_top">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" ></a>
+				</div>
+		        <div class="nav_R">
+					<span class="nav_span"><a href="tongzhi.html"><img src="images/tz.png" />我的通知</a></span>
+					<a href="javascript:void(0)" class="z_op">进口商<img src="images/xl.png" /></a>
+					<ul class="nav_xial">
+					<li><a href="jink.html">进口商_990</a></li>
+					<li><a href="jiang.html">监管企业_948</a></li>
+					<li><a href="xy.html">银行_902</a></li>
+					</ul>
+					<span>进口商_990 | 操作员</span>
+					 <a href="javascript:void(0)" class="z_op01">操作</a> 
+					  <div class="nav_xial2">
+						 <p><a class="open_tca1"><img src="images/ico1.png" />修改密码</a></p>
+						 <p><a class="open_tca2"><img src="images/ico2.png" />修改信息</a></p>
+						 <p><a href="login.html"><img src="images/ico3.png" />退出登录</a></p>
+					  </div>
+				</div>
+		</div>
+		<div class="clear"></div>
+		<div class="nav">
+			<div class="w1200">
+					<a href="index.html">首页</a>
+					<a href="xy.html">协议管理</a>
+					<a href="rongzi.html">融资管理</a>
+					<a href="zichan.html">资产管理</a>
+					<a href="dingshi.html" class="hover">盯市管理</a>				
+			</div>
+		</div>
+		<div class="w1200"><p class="pos"><img src="images/pos.png" /><a href="index.html">首页</a> /  盯市管理  /  价格行情</p></div>
+	</header>
+	<!--头部结束-->
+	<!--中间部分-->
+<div class="w1200">
+	<div class="main">
+		<!--左-->
+		<div class="main_L left">
+			<h1>融资管理</h1>
+			<ul>
+				<li><a href="rongzi.html">融资信息查询</a></li>
+				<li><a href="d_danj.html">待处理单据管理</a></li>
+				<li><a href="d_chendui.html">待处理承兑管理</a></li>
+				<li><a href="d_rongz.html">待处理融资管理</a></li>
+				<li><a href="d_jkds.html">待处理进口代收管理</a></li>
+			</ul>
+		</div>
+		<!--左结束-->
+		<!--右-->
+	  <div class="main_R right">
+		<h1 class="rce_tit">申请开证</h1>
+		<div class="tab_list">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+		<td height="85" valign="bottom">采购合同编号<span class="redfont">（必填）</span><br><input class="text_input" type="text" value="JXXB_00001" readonly></td>
+      <td height="85" valign="bottom">协议编号<span class="redfont">（必填）</span><br><input class="text_input" type="text" value="建厦象保2015003" readonly></td>
+      <td height="85" valign="bottom">监管企业<span class="redfont">（必填）</span><br><input class="text_input" type="text" value="监管企业_948" readonly></td>
+      </tr>
+    <tr>
+      <td height="80" colspan="3" valign="bottom">保购编号<span class="redfont">（必填）</span><br><input class="text_input" type="text" value="厦BGD_001"></td>
+      </tr>
+    <tr>
+      <td height="120" colspan="3" valign="bottom">备注说明<br><textarea class="text_are">申请信用证</textarea></td>
+      </tr>
+  </tbody>
+</table>
+	<div class="jianys_box">
+			<p class="jiany_bt">开证申请</p>
+			<h1 class="jiany_bt2">开立国际信用证申请书</h1>
+		    <div class="kaiz_nr1"><span class="redfont">*</span>开证行：<input class="kaiz_text" type="text" value="银行_902">
+				<p>我单位向你行申请按下列条件开立国际信用证。</p>
+		    </div>
+		    <div class="kaiz_nr1"><p>1.有效期及有效地点</p>
+				<span class="redfont">*</span>有效期：<input class="kaiz_text tcal rq" type="text" value="2015-07-08">
+				<span class="redfont">*</span>有效地点：<input class="kaiz_text" type="text" value="厦门">
+		    </div>
+			<div class="kaiz_nr1"><p>2.申请人信息</p>
+				<ul class="xyz_ul">
+					<li><span class="redfont">*</span>名　　　称：<input class="kaiz_text2" type="text" value="进口商_990"></li>
+					<li><span class="redfont">*</span>开　户　行：<input class="kaiz_text2" type="text" value="建设银行厦门分行"></li>
+					<li><span class="redfont">*</span>账　　　号：<input class="kaiz_text2" type="text" value="35101566001052504210"></li>
+					<li><span class="redfont">*</span>电　　　话：<input class="kaiz_text" type="text" value="13456211245" readonly>
+						<span class="redfont">*</span>邮 政 编 码：<input class="kaiz_text" style="width:300px;" type="text" value="260000" readonly></li>
+					<li><span class="redfont">*</span>地　　　址：<input class="kaiz_text2" type="text" value="中国" readonly></li>
+				</ul>
+		    </div>
+		   <div class="kaiz_nr1"><p>3.通知行信息(如空白，请贵行自行选择)</p>
+				<ul class="xyz_ul">
+					<li>名　　　称：<input class="kaiz_text2" type="text" value="银行_902"></li>
+					<li>地　　　址：<input class="kaiz_text2" type="text" value="中国"></li>
+					<li>swiftCode：<input class="kaiz_text2" type="text" ></li>
+				</ul>
+	      </div>
+			<div class="kaiz_nr1"><p>4.受益人信息</p>
+				<ul class="xyz_ul">
+					<li><span class="redfont">*</span>名　　　称：<input class="kaiz_text2" type="text" value="出口商"></li>
+					<li><span class="redfont">*</span>地　　　址：<input class="kaiz_text2" type="text" value="外国"></li>
+				</ul>
+		    </div>
+		   <div class="kaiz_nr1"><p>5.是否可转让
+			                  <font style="width:750px;display: block;float:right;">
+			   					<label class="yy_check">
+									<input type="radio" name="place" class="yy_danx input1" checked>
+									<span></span>可转让　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="place" class="yy_danx input2">
+									<span></span>不可转让
+							  </label>
+              </font>
+			                  </p>
+			   <div class="clear"></div>
+				<ul class="xyz_ul">
+					<li>转让行(如有)名称：<input class="kaiz_text2 xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>转让行(如有)行号：<input class="kaiz_text2 xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>转让行(如有)地址：<input class="kaiz_text2 xuan_kaiztext" style="width:710px;" type="text" ></li>
+				</ul>
+	      </div>
+	<script type="text/javascript">
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+			$('.input2').click(function(){
+				$(".xuan_kaiztext").attr("disabled","disabled");
+				$(".xuan_kaiztext").addClass("notext");
+			})
+			$('.input1').click(function(){
+				$(".xuan_kaiztext").removeAttr("disabled");
+				$(".xuan_kaiztext").removeClass("notext");
+			});
+})
+	</script>
+		  <div class="kaiz_nr1"><p>6.是否可保兑
+			                  <font style="width:750px;display: block;float:right;">
+			   					<label class="yy_check">
+									<input type="radio" name="place2" class="yy_danx b_input1" checked>
+									<span></span>可保兑　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="place2" class="yy_danx b_input2">
+									<span></span>不可保兑
+							  </label>
+              </font>
+			                  </p>
+			   <div class="clear"></div>
+				<ul class="xyz_ul">
+					<li>保兑行(如有)名称：<input class="kaiz_text2 b_xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>保兑行(如有)行号：<input class="kaiz_text2 b_xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>保兑行(如有)地址：<input class="kaiz_text2 b_xuan_kaiztext" style="width:710px;" type="text" ></li>
+				</ul>
+	      </div>
+	<script type="text/javascript">
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+			$('.b_input2').click(function(){
+				$(".b_xuan_kaiztext").attr("disabled","disabled");
+				$(".b_xuan_kaiztext").addClass("notext");
+			})
+			$('.b_input1').click(function(){
+				$(".b_xuan_kaiztext").removeAttr("disabled");
+				$(".b_xuan_kaiztext").removeClass("notext");
+			});
+})
+	</script>
+		  <div class="kaiz_nr1"><p>7.是否可议付
+			                  <font style="width:750px;display: block;float:right;">
+			   					<label class="yy_check">
+									<input type="radio" name="place3" class="yy_danx c_input1" checked>
+									<span></span>可议付　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="place3" class="yy_danx c_input2">
+									<span></span>不可议付
+							  </label>
+              </font>
+			                  </p>
+			   <div class="clear"></div>
+				<ul class="xyz_ul">
+					<li>议付行(如有)名称：<input class="kaiz_text2 c_xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>议付行(如有)行号：<input class="kaiz_text2 c_xuan_kaiztext" style="width:710px;" type="text" ></li>
+					<li>议付行(如有)地址：<input class="kaiz_text2 c_xuan_kaiztext" style="width:710px;" type="text" ></li>
+				</ul>
+	      </div>
+	<script type="text/javascript">
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+			$('.c_input2').click(function(){
+				$(".c_xuan_kaiztext").attr("disabled","disabled");
+				$(".c_xuan_kaiztext").addClass("notext");
+			})
+			$('.c_input1').click(function(){
+				$(".c_xuan_kaiztext").removeAttr("disabled");
+				$(".c_xuan_kaiztext").removeClass("notext");
+			});
+})
+	</script>
+		   <div class="kaiz_nr1"><p><span class="redfont">*</span>8.货物总数
+			       <input class="kaiz_text3 setgoal" type="text" value="1000" id="shuliang">
+			       货物单价<input class="kaiz_text3 setgoal" type="text" value="200.00" id="danjia">
+			   币种<select class="kaiz_text3">
+					<option value="美元"  selected="selected">请选择币种</option>
+					<option>人民币</option>
+				   <option>美元</option>
+				   <option>奥地利先令</option>
+				   <option>澳大利亚元</option>
+				   <option>比利时法郎</option>
+				   <option>加拿大元</option>
+				   <option>瑞士法郎</option>
+				   <option>西德马克</option>
+				   <option>丹麦克朗</option>
+				   <option>阿尔及利亚第纳尔</option>
+				   <option>芬兰马克</option>
+				   <option>法国法郎</option>
+				   <option>英镑</option>
+				   <option>加纳塞地</option>
+				   <option>几内亚西里</option>
+				   <option>港币</option>
+				   <option>伊拉克第纳尔</option>
+				   <option>伊朗里亚尔</option>
+				  </select>
+			      </p>
+			   <ul class="xyz_ul">
+					<li>金额(大写)：<input class="kaiz_text zongjiadx" type="text" value="贰拾万元整" >(小写)￥：<input class="kaiz_text zongjia" type="text" value="200,000" id="zongjia"></li>
+					<li>是否分期付款<font style="width:750px;display: block;float:right;">
+			   					<label class="yy_check">
+									<input type="radio" name="place" class="yy_danx">
+									<span></span>是　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="place" class="yy_danx">
+									<span></span>否
+				    </label>
+			                    </font></li>
+			 </ul>
+	      </div>
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$(".setgoal").bind("input propertychange",
+		function()
+	{
+		var s1 = $("#shuliang").val();
+		var s2 = $("#danjia").val();
+			s1 = s1 ? s1 : 0;
+			s2 = s2 ? s2 : 0;
+		$(".shuliang").val(s1).text(s1);
+		var deVal = parseInt(s1)*parseInt(s2);
+			deVal = deVal ? deVal : 0;
+		$(".zongjia").val(get_thousand_num(deVal)).text(get_thousand_num(deVal));
+		$(".zongjiadx").val(deVal).val(smalltoBIG(deVal));
+	});
+	/** 数字金额大写转换(可以处理整数,小数,负数) */    
+    function smalltoBIG(n)     
+    {    
+        var fraction = ['角', '分'];    
+        var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];    
+        var unit = [ ['元', '万', '亿'], ['', '拾', '佰', '仟']  ];    
+        var head = n < 0? '欠': '';    
+        n = Math.abs(n);    
+      
+        var s = '';    
+      
+        for (var i = 0; i < fraction.length; i++)     
+        {    
+            s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');    
+        }    
+        s = s || '整';    
+        n = Math.floor(n);    
+      
+        for (var i = 0; i < unit[0].length && n > 0; i++)     
+        {    
+            var p = '';    
+            for (var j = 0; j < unit[1].length && n > 0; j++)     
+            {    
+                p = digit[n % 10] + unit[1][j] + p;    
+                n = Math.floor(n / 10);    
+            }    
+            s = p.replace(/(零.)*零$/, '').replace(/^$/, '零')  + unit[0][i] + s;    
+        }    
+        return head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');    
+    }
+	function get_thousand_num(num) {
+    return num.toString().replace(/\d+/, function (n) { // 先提取整数部分
+        return n.replace(/(\d)(?=(\d{3})+$)/g, function ($1) { // 对整数部分添加分隔符
+            return $1 + ",";
+        });
+    });
+}
+
+})
+</script>
+			<div class="kaiz_nr1"><p><span class="redfont">*</span>9.付款期限
+			                  <font style="width:750px;display: block;float:right;">
+			   					<label class="yy_check">
+									<input type="radio" name="aa" class="yy_danx e_input1" checked>
+									<span></span>即期　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="aa" class="yy_danx e_input2">
+									<span></span>远期
+							  </label>
+              </font>
+			                  </p>
+			   <div class="clear"></div>
+				<ul class="xyz_ul">
+					<li>具体为</li>
+					<li class="e_xuan_kaiztext"><label class="yy_check2">
+									<input type="radio" name="bb" class="yy_danx e_xuan_kaiztext">
+									<span></span>
+								</label>(1)单据日后<input type="text" class="wen_text e_xuan_kaiztext">天,定期付款</li>
+					<li class="e_xuan_kaiztext"><label class="yy_check2">
+									<input type="radio" name="bb" class="yy_danx e_xuan_kaiztext">
+									<span></span>
+								</label>(2)见单后<input type="text" class="wen_text e_xuan_kaiztext">天,定期付款</li>
+					<li class="e_xuan_kaiztext"><label class="yy_check2">
+									<input type="radio" name="bb" class="yy_danx e_xuan_kaiztext">
+									<span></span>
+								</label>(3)固定日期<input type="text" class="wen_text e_xuan_kaiztext tcal rq">定期付款</li>
+					<li class="e_xuan_kaiztext"><label class="yy_check2">
+									<input type="radio" name="bb" class="yy_danx e_xuan_kaiztext e_xuan_kaiztext">
+									<span></span>
+								</label>(4)其他</li>
+				</ul>
+		    </div>
+	<script type="text/javascript">
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+			$('.e_input2').click(function(){
+				$(".e_xuan_kaiztext").attr("disabled","disabled");
+				$(".e_xuan_kaiztext").addClass("noxuan");
+				$(".yy_check2 span").addClass("nocheck");
+				$(".e_xuan_kaiztext").val("");
+			})
+			$('.e_input1').click(function(){
+				$(".e_xuan_kaiztext").removeAttr("disabled");
+				$(".e_xuan_kaiztext").removeClass("noxuan");
+				$(".yy_check2 span").removeClass("nocheck");
+			});
+			if( $("yy_checkss .input[type='checkbox']:checked").length>0){
+				$(".xyz_ul input").attr("disabled","disabled");
+			});
+})
+
+	</script>
+		<div class="kaiz_nr1"><span class="redfont">*</span>8.货物总数<input class="kaiz_text2" type="text" value="小麦" readonly></div>
+		<div class="kaiz_nr1"><p>11.货物贸易项下的运输交货或服务贸易项下的服务提供条款</p>
+			<div class="kaiz_nr1"><label class="yy_checkss">
+									<input type="checkbox" name="place" class="yy_danx" checked>
+									<span></span>
+								</label><span class="redfont">*</span>货物贸易项下运输交货条款</div>
+			   <ul class="xyz_ul">
+<input type="checkbox" name="fnt1" class="a" checked>复选框
+<script type="text/javascript">
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$(".a").click(function(){
+  if($(".a").attr('checked') == 'checked'){
+		console.log(123)
+	}else{
+		console.log(4546)
+	}
+});
+		
+	})
+	
+</script>
+					<li>(1)运输或交货方式<select class="kaiz_text">
+					<option>请选择</option>
+					<option selected="selected">海运</option>
+					<option>河运</option>
+					<option>航空运输</option>
+					<option>铁路运输</option>
+					<option>公路运输</option>
+					<option>邮政运输</option>
+					<option>其他</option>
+				  </select></li>
+					<li>(2)货物装运地(港)<input class="kaiz_text3" type="text" >　　目的地<input class="kaiz_text3" type="text" >　　交货地(港)<input class="kaiz_text3" type="text" ></li>
+				    <li>(3)分批装运<font style="width:750px;display: block;float:right;"><label class="yy_check">
+									<input type="radio" name="yunx5" class="yy_danx" checked>
+									<span></span>允许　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="yunx5" class="yy_danx">
+									<span></span>不允许
+					</label>　　　　　　　　　　(未作规定的，视为允许货物分批装运)</font>
+				   </li>
+				   <li>(4)分期装运<font style="width:750px;display: block;float:right;"><label class="yy_check">
+									<input type="radio" name="yunx4" class="yy_danx" checked>
+									<span></span>允许　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="yunx4" class="yy_danx">
+									<span></span>不允许
+				   </label>　　　　　　　　　　(未作规定的，视为允许货物分批装运)</font>
+				   </li>
+				   <li>分期具体约定<input class="kaiz_text2" type="text" ></li>
+				   <li>(5)转运<font style="width:750px;display: block;float:right;"><label class="yy_check">
+									<input type="radio" name="yunx3" class="yy_danx" checked>
+									<span></span>允许　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="yunx3" class="yy_danx">
+									<span></span>不允许
+				   </label>　　　　　　　　　　(未作规定的，视为允许货物分批装运)</font>
+				   </li>
+				   <li><span class="redfont">*</span>(6)最迟货物装运日<input class="kaiz_text3 tcal rq" type="text" value="2018-10-26"></li>
+			</ul>
+			
+			   <ul class="xyz_ul">
+				    <li><label class="yy_checkss">
+									<input type="checkbox" name="place" class="yy_danx" checked>
+									<span></span>
+								</label><span class="redfont">*</span>服务贸易项下运输交货条款</li>
+					<li>(1)服务提供方式<input class="kaiz_text3" type="text" >　　提供地点<input class="kaiz_text" type="text" ></li>
+				    <li>(2)是否允许分次提供<font style="width:670px;display: block;float:right;"><label class="yy_check">
+									<input type="radio" name="yunx" class="yy_danx" checked>
+									<span></span>允许　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="yunx" class="yy_danx">
+									<span></span>不允许
+									</label>　　　　　　　　　　(未作规定的，视为允许货物分期装运)</font>
+				   </li>
+				   <li>(3)是否允许分期提供<font style="width:670px;display: block;float:right;"><label class="yy_check">
+									<input type="radio" name="yunx2" class="yy_danx" checked>
+									<span></span>允许　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="yunx3" class="yy_danx">
+									<span></span>不允许
+									</label>　　　　　　　　　　(未作规定的，视为允许货物分期装运)</font>
+				   </li>
+				   <li>分期具体约定<input class="kaiz_text2" type="text" ></li>
+				   <li><span class="redfont">*</span>(4)最迟服务提供日<input class="kaiz_text3 tcal rq" type="text" value="2018-10-26"></li>
+				   <li>(5)服务贸易项下双方认为应记载的其他事项<input class="kaiz_text2" style="width:560px;" type="text" ></li>
+			  </ul>
+			
+	      </div>
+	    
+		 <div class="kaiz_nr1">12.交单期<input class="kaiz_text3 tcal rq" type="text" value="请选择时间"></div>
+		 <div class="kaiz_nr1">13.受益人应提交的单据</div>
+              <ul class="xyz_ul">
+					<li><label class="yy_checkss">
+									<input type="checkbox" name="place" class="yy_danx">
+									<span></span>
+								</label>(1)发票注明信用证号码及合同号码。发票类型
+					<select class="kaiz_text3">
+					<option>请选择</option>
+					<option selected="selected">普通发票</option>
+					<option>增值税专用发票</option>
+				    </select>
+				   </li>
+				    <li><label class="yy_checkss">
+									<input type="checkbox" name="qt" class="yy_danx">
+									<span></span>(2)全套
+								</label>
+						        <label class="yy_check">
+									<input type="radio" name="haiy" class="yy_danx" checked>
+									<span></span>海运　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="haiy" class="yy_danx">
+									<span></span>河运
+								</label>
+						<div class="clear"></div>
+						<div>提单正本<input class="kaiz_text3" type="text" >份,副本<input class="kaiz_text3" type="text" >份,收货人<input class="kaiz_text3" type="text" ></div>
+						<div style="line-height:50px;"><span style="float:left;">注明运费</span><label class="yy_check">
+									<input type="radio" name="fuka" class="yy_danx" checked>
+									<span></span>已付 　
+								</label>
+			   					<label class="yy_check">
+									<input type="radio" name="fuka" class="yy_danx">
+									<span></span>未付
+								</label>
+						</div>
+							</li>
+				  
+				   <li><label class="yy_checkss">
+									<input type="checkbox" name="hangk" class="yy_danx">
+									<span></span>
+								</label>(3)航空运单，收货人<input class="kaiz_text3" type="text" >
+					   				<font style="width:500px;display: block;float:right;"><span style="line-height:40px;float:left;">注明运费</span>
+										<label class="yy_check">
+											<input type="radio" name="fuk2" class="yy_danx" checked>
+											<span></span>已付　
+										</label>
+			   							<label class="yy_check">
+											<input type="radio" name="fuk2" class="yy_danx">
+											<span></span>未付
+										</label>
+					                </font>
+				   </li>
+				   <li><label class="yy_checkss">
+									<input type="checkbox" name="sixiang" class="yy_danx">
+									<span></span>
+								</label>(4)
+					   				<font style="width:760px;display: block;float:right;">
+										<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx" checked>
+											<span></span>铁路　
+										</label>
+			   							<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx">
+											<span></span>公路	　　
+										</label>
+									运单,收货人<input class="kaiz_text3" type="text" >注明运费已付
+					                </font>
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="shouju" class="yy_danx">
+									<span></span>
+								</label>(5)邮政收据，收货人<input class="kaiz_text3" type="text" >注明运费已付
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="shouju2" class="yy_danx">
+									<span></span>
+								</label>(6)货物收据，收货人<input class="kaiz_text3" type="text" >
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="baoxiand" class="yy_danx">
+									<span></span>
+								</label>(7)保险单正本<input class="kaiz_text3" type="text" >份,
+									  副本<input class="kaiz_text3" type="text" >份,
+									  投保金额 (大写)人民币<input class="kaiz_text3" type="text" >,
+									  （小写）¥<input class="kaiz_text3" type="text" >
+									  投保险别<input class="kaiz_text3" type="text" >
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="shouju2" class="yy_danx">
+									<span></span>
+								</label>(8)装箱单<input class="kaiz_text3" type="text" >份,注明每一包装件内货物数量及每件的毛、净重。
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="shouju2" class="yy_danx">
+									<span></span>
+								</label>(9)服务提供的单据，
+					 		 <font style="width:650px;display: block;float:right;">
+										<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx" checked>
+											<span></span>服务接受方的证明　
+										</label>
+			   							<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx">
+											<span></span>服务提供方的履约证明	　　
+										</label>
+								 		<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx">
+											<span></span>第三方的服务履约证明	　　
+										</label>
+					                </font>
+					  
+				   </li>
+				  <li><label class="yy_checkss">
+									<input type="checkbox" name="shouju2" class="yy_danx">
+									<span></span>
+								</label>(10)其他单据<input class="kaiz_text" type="text" >
+				   </li>
+				   
+			</ul>
+		
+			<div class="kaiz_nr1"><span class="redfont">*</span>14.其他条款</div>
+			<ul class="xyz_ul">
+					<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(1)单据必须自运输单据或服务提供单据签发日起<input class="kaiz_text3" type="text" >天内提交。(不能晚于信用证有效期)
+					</li>
+				   <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label><span class="redfont">*</span>(2)货物数量/重量可有<input class="kaiz_text4" type="text" >%的上浮范围,<input class="kaiz_text4" type="text" >%的下浮范围,信用证金额为<input class="kaiz_text4" type="text" >
+					</li>
+				 <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(3)单价可有<input class="kaiz_text4" type="text" >%的上浮范围,<input class="kaiz_text4" type="text" >%的下浮范围,信用证金额为<input class="kaiz_text4" type="text" >
+					</li>
+				<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(4)其他<input class="kaiz_text2" type="text" >
+					</li>
+				<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(5)是否办理买方付息福费廷业务
+					        <font style="width:590px;display: block;float:right;">
+										<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx" checked>
+											<span></span>否　
+										</label>
+			   							<label class="yy_check">
+											<input type="radio" name="tielu" class="yy_danx">
+											<span></span>是	　　
+										</label>
+									福费廷利息和手续费共计￥<input class="kaiz_text3" type="text" >
+					                </font>
+					</li>
+				    
+			</ul>
+		<div class="kaiz_nr1">15.信用证项下手续费承担方
+		<font style="width:620px;display: block;float:right;">
+					<label class="yy_check">
+						<input type="radio" name="tielu" class="yy_danx" checked>
+						<span></span>开证申请人　
+					</label>
+					<label class="yy_check">
+						<input type="radio" name="tielu" class="yy_danx">
+						<span></span>受益人	　　
+					</label>
+					<label class="yy_check">
+						<input type="radio" name="tielu" class="yy_danx">
+						<span></span>其他	　　
+					</label>
+				</font>
+		</div>
+		<div class="kaiz_nr1">16.本笔业务开证手续费按照下面第<input class="kaiz_text3" type="text" >方式收取</div>
+		<ul class="xyz_ul">
+					<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(1)按照编号为<input class="kaiz_text3" type="text" >的《国际信用证开证合同》中关于手续费的约定执行
+					</li>
+				   <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(2)开证金额的<input class="kaiz_text4" type="text" >%支付方式为<input class="kaiz_text4" type="text" >
+					</li>
+				 <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(3)其他<input class="kaiz_text2" type="text" >
+					</li>
+			</ul>
+		<div class="kaiz_nr1">17.本笔业务项下债权担保方式为以下第<input class="kaiz_text3" type="text" >种</div>
+		<ul class="xyz_ul">
+					<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(1)保证金质押，开证保证金比例为开证金额与溢短装浮动金额(如有)之和的<input class="kaiz_text3" type="text" >% ，即 (大写)人民币<input class="kaiz_text3" type="text" >（小写）￥<input class="kaiz_text3" type="text" >
+					</li>
+				   <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(2)保证。具体为<input class="kaiz_text" type="text" >
+					</li>
+				 <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(3)抵押。具体为<input class="kaiz_text" type="text" >
+					</li>
+			 	 <li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(4)质押。具体为<input class="kaiz_text" type="text" >
+					</li>
+				<li><label class="yy_checkss">
+											<input type="checkbox" name="shouju2" class="yy_danx">
+											<span></span>
+										</label>(5)其他<input class="kaiz_text2" type="text" >
+					</li>
+			</ul>
+		<div class="kaiz_nr1">18.我单位承诺</div>
+		<ul class="xyz_ul">
+					<li>(1)确保本国际信用证项下的商品/服务贸易具有真实、合法的贸易背景</li>
+				    <li>(2)贵行对由于任何电报、信函或单据邮寄过程中发生延误、遗失所造成的后果，或者电讯传递过程中发生的差错，不承担责任</li>
+				    <li>(3)如因申请书字迹不清或词意含混而引起的一切后果由我单位负责</li>
+			 	    <li>(4)在贵行为我单位开立国际信用证及/或办理国际信用证买方付息福费廷业务的<input class="kaiz_text3" type="text" ></li>
+				    <li>个工作日前，在以下两个账户之一存入足够金额用于支付开证手续费及/或福费廷相关利息和费用</li>
+					<li><font style="width:815px;display: block;float:right;">
+					<label class="yy_check">
+						<input type="radio" name="tielu" class="yy_danx" checked>
+						<span></span>
+					</label>单位人民币结算账户(账号<input class="kaiz_text3" type="text" >)(适用于在开证行开立单位结算账户的客户)
+						<p class="clear"></p>
+					<label class="yy_check">
+						<input type="radio" name="tielu" class="yy_danx">
+						<span></span>
+					</label>贵行用于扣划开证手续费及/或福费廷相关利息和费用的内部账户(账号<input class="kaiz_text3" type="text" >)(适用于未在开证行开立单位结算账户的客户)
+				</font>
+			
+					</li>
+			</ul>
+			<div class="kaiz_nr1" style="line-height:24px;">我单位不可撤销地同意贵行按照上述约定利率和手续费标准从该账户直接扣收开证手续费及/或国际信用证福费廷相关利息和费用。我单位对于由于账户余额不足等原因导致利息和费用未能及时、足额支付而给贵行造成的损失承担完全赔偿责任。</div>
+			<ul class="xyz_ul xyz_ul2">
+				<li><span class="redfont">*</span>联系人<input class="kaiz_text" type="text" value="李四" >　开证申请人签章<input class="kaiz_text" type="text" ></li>
+				<li><span class="redfont">*</span>电　话<input class="kaiz_text" type="text" value="13000000000" ></li>
+			</ul>
+			<ul class="xyz_ul">
+				<li>注：</li>
+				<li>1.开证申请书一式三联，一联受理回单，一联开证依据，一联开证存查。</li>
+				<li>2.其他需要说明事项，可加附页。</li>
+			</ul>
+		
+		
+    </div>
+			<img src="images/shangc5.png" usemap="#Map" />
+            <map name="Map">
+              <area shape="rect" coords="5,414,83,456" href="rongzi.html">
+			  <area shape="rect" coords="5,173,44,204" href="javascript:void(0)" class="yulan_tc">
+              <area shape="rect" coords="9,53,113,173" href="images/tp5.png" download="信用证正本">
+			  <area shape="rect" coords="4,365,43,396" href="javascript:void(0)" class="yulan_tc2">
+              <area shape="rect" coords="13,241,182,367" href="images/tp4.png" download="业务申请书承担保购责任确认书">
+            </map>
+		</div>
+	  </div>
+		<!--右结束-->
+	</div>
+</div>
+
+
+	<!--中间部分结束-->
+<!--底部开始-->
+<div class="clear"></div>
+<div class="footer">
+	<p>ALL rights reserved | 苏ICP备18045509号</p>
+	<p>本站声明：请仔细阅读用户协议，本站所载文章、数据仅供参考，使用前请核实，风险自负。</p>
+	<p>数据服务版本1.1.8.  APP版本号：1.0.1.RELEASE</p>
+</div>
+<!--底部结束-->
+<!--弹出层-->
+<div class="tc_box1">
+	<div class="tc_box_con1">
+    	<div class="close_tc1">
+    		修改密码<img src="images/close.png"/>
+    	</div>
+        <ul class="tc_box_list1">
+			<li>输入当前密码<input class="tc_text1" type="text" placeholder="输入当前密码"></li>
+			<li>输入新密码　<input class="tc_text1" type="text" placeholder="输入新密码"></li>
+			<li>确认新密码　<input class="tc_text1" type="text" placeholder="输入新密码"></li>
+		</ul>
+		<p class="hd_tssm1"><a class="tc_btn1" href="javascript:void(0)">保 存</a><a class="tc_btn2" href="javascript:void(0)">关 闭</a></p>
+    </div>
+</div>
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$('.open_tca1').click(function(){
+		$('.tc_box1').show();
+		});
+	$('.close_tc1,.tc_btn1,.tc_btn2').click(function(){
+		$('.tc_box1').hide();
+		});
+})
+</script>
+<!--弹出层-->
+<div class="tc_box2">
+	<div class="tc_box_con1">
+    	<div class="close_tc1">
+    		修改信息<img src="images/close.png"/>
+    	</div>
+        <ul class="tc_box_list1">
+			<li>登录ID　<input class="tc_text1" type="text" placeholder="YH1524"></li>
+			<li>用户姓名<input class="tc_text1" type="text" placeholder="韩骁"></li>
+			<li>联系方式<input class="tc_text1" type="text" placeholder="18549452145"></li>
+			<li>邮箱　　<input class="tc_text1" type="text" placeholder="450055474@163.com"></li>
+		</ul>
+		<p class="hd_tssm1"><a class="tc_btn1" href="javascript:void(0)">保 存</a><a class="tc_btn2" href="javascript:void(0)">关 闭</a></p>
+    </div>
+</div>
+<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$('.open_tca2').click(function(){
+		$('.tc_box2').show();
+		});
+	$('.close_tc1,.tc_btn1,.tc_btn2').click(function(){
+		$('.tc_box2').hide();
+		});
+})
+</script>
+<!--弹出层-->
+<div class="yulan_nr">
+   <div class="tc_box_ddd">
+   	 <img src="images/tp5.png" class="yu_nr" />
+   </div>
+</div>
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$('.yulan_tc').click(function(){
+		$('.yulan_nr').show();
+		});
+	$('.yu_nr').click(function(){
+		$('.yulan_nr').hide();
+		});
+})
+</script>
+<!--弹出层-->
+<div class="yulan_nr2">
+   <div class="tc_box_ddd">
+   	 <img src="images/tp4.png" class="yu_nr" />
+   </div>
+</div>
+<script>
+jQuery.noConflict(); //将变量$的控制权让渡给prototype.js
+jQuery(document).ready(function($){
+	$('.yulan_tc2').click(function(){
+		$('.yulan_nr2').show();
+		});
+	$('.yu_nr').click(function(){
+		$('.yulan_nr2').hide();
+		});
+})
+</script>
+</body>
+</html>

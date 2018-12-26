@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	
+	<div class="head1">
+		<a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>我的策略</span>
+	</div>
+	<div class="head_mar"></div>
+	<div class="mycel"><span class="checked">我的关注</span><span>我的发布</span><span>我的签约</span></div>
+	<script type="text/javascript">
+	$(function(){
+		$(".myzgcon .myqie:gt(0)").hide();
+		$(".mycel span").click(function(){
+			$(this).addClass("checked").siblings().removeClass("checked");
+			//获取序列号
+			index=$(this).index();
+			$(".myzgcon .myqie").eq(index).show().siblings().hide();
+		})
+	})
+	</script>
+	<div class="myzgcon">
+		<div class="myqie">
+			<div class="caicon">
+				<dl>
+					<a href="">
+						<dt><img src="images/caijing.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhousan.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhouer.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/caijing.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhousan.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhouer.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<div class="chakangengduo">查看更多+</div>
+				<script type="text/javascript">
+					$(function(){
+						$('.chakangengduo').click(function(){
+							$('.yincang').show();
+							$('.chakangengduo').hide();
+						})
+					})
+				</script>
+				<div class="yincang">
+					<dl>
+						<a href="">
+							<dt><img src="images/caijing.png"/></dt>
+							<dd>
+								<p class="caitit">文章名称</p>
+								<p class="caicons">策略内容简单介绍策略内容简单...</p>
+								<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+							</dd>
+						</a>
+					</dl>
+					<dl>
+						<a href="">
+							<dt><img src="images/zhousan.png"/></dt>
+							<dd>
+								<p class="caitit">文章名称</p>
+								<p class="caicons">策略内容简单介绍策略内容简单...</p>
+								<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+							</dd>
+						</a>
+					</dl>
+					<dl>
+						<a href="">
+							<dt><img src="images/zhouer.png"/></dt>
+							<dd>
+								<p class="caitit">文章名称</p>
+								<p class="caicons">策略内容简单介绍策略内容简单...</p>
+								<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+							</dd>
+						</a>
+					</dl>
+					<div class="fen"><img src="images/fenye.png" class="fenye"></div>
+				</div>
+
+			</div>
+		</div>
+		<div class="myqie">
+			<div class="caicon">
+				<dl>
+					<a href="">
+						<dt><img src="images/caijing.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称2</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhousan.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称2</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhouer.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+			</div>
+		</div>
+		<div class="myqie">
+			<div class="caicon">
+				<dl>
+					<a href="">
+						<dt><img src="images/caijing.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称12</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhousan.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称12</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="">
+						<dt><img src="images/zhouer.png"/></dt>
+						<dd>
+							<p class="caitit">文章名称</p>
+							<p class="caicons">策略内容简单介绍策略内容简单...</p>
+							<p class="carfo"><i class="icon iconfont icon-zan"></i>7258</p>
+						</dd>
+					</a>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

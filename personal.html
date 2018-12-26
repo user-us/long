@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/demo.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script src="js/echarts.min.js"></script>
+</head>
+<body class="bodybg">
+    <!-- 头部 -->
+    <div class="personal_head">
+        <div class="personal_xun"><i class="icon iconfont icon-xunzhang"></i>勋章墙</div>
+        <div class="personal_head1">
+            <a href="javascript:history.back(-1)" target="_self"><img src="images/x_left.png"/></a><span>个人中心</span>
+        </div>
+        <div class="personal_avatar"><img src="images/avatar.png" /></div>
+        <div class="personal_name">李明</div>
+        <div class="personal_qian">今天又是元气满满的一天呀~</div>
+        <div class="personal_guan"><span>关注 150</span>|<span>粉丝 72</span></div>
+        <div class="personal_guan" style="margin-top:.2rem"><span>跟投人数 199652</span></div>
+    </div>
+    <!-- 主体 -->
+    <div class="personal_main">
+        <div class="perMain_title"><span>策略</span><span class="per_active">视频</span><span>过往业绩</span></div>
+        <div>
+            <div class="perMain_video">
+                <dl>
+                    <dt><video poster="images/video.png" src="images/ceshi.mp4" controls="controls"></video></dt>
+                    <dd>
+                        <div class="video_box">
+                            <h1>小白如何学习技术分析</h1>
+                            <h3>策略内容简单介绍策略内容简单而已</h3>
+                            <div class="video_cont">讲师：秦老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><video poster="images/video1.png" src="images/ceshi.mp4" controls="controls"></video></dt>
+                    <dd>
+                        <div class="video_box">
+                            <h1>首发代扣</h1>
+                            <h3>分散播种，集中收获</h3>
+                            <div class="video_cont">讲师：刘老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="perMain_video">
+                <dl>
+                    <dt><video poster="images/video.png" src="images/ceshi.mp4" controls="controls"></video></dt>
+                    <dd>
+                        <div class="video_box">
+                            <h1>小白如何学习技术分析111</h1>
+                            <h3>策略内容简单介绍策略内容简单而已</h3>
+                            <div class="video_cont">讲师：秦老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><video poster="images/video1.png" src="images/ceshi.mp4" controls="controls"></video></dt>
+                    <dd>
+                        <div class="video_box">
+                            <h1>首发代扣</h1>
+                            <h3>分散播种，集中收获111</h3>
+                            <div class="video_cont">讲师：刘老师 <i class="icon iconfont icon-dianzan"></i>7258</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="perMain_video">
+                <h3 class="old_yeji">过往业绩：<span>11月4日</span></h3>
+                <h4 class="year_zoushi">今年以来收益走势</h4>
+                <div id="zhexian" style="height: 300px;width: 400px;"></div>
+                <div class="yeji_bottom">
+                    <h3 class="old_yeji">过往业绩：</h3>
+                    <h4 class="year_zoushi">交割单</h4>
+                    <div class="max-widthta">
+                        <table class="table_yeji">
+                            <tr>
+                                <th>成交日期</th>
+                                <th>策略代码</th>
+                                <th>策略名称</th>
+                                <th>成交金额</th>
+                                <th>目前收益</th>
+                                <th>策略状态</th>
+                            </tr>
+                            <tr>
+                                <td>2018/6/30</td>
+                                <td>000693</td>
+                                <td>智能定投策略</td>
+                                <td>50000</td>
+                                <td>956</td>
+                                <td>已签约</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.perMain_video').css('display','none');
+        $('.perMain_video').eq(1).css('display','block');
+    </script>
+    <script>
+        var dom = document.getElementById("zhexian");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = {
+            color:['#0078DD'],
+        xAxis: {
+            type: 'category',
+            data: ['11-01', '11-02', '11-03', '11-03', 'Mar-01', 'Jun-01', 'Sep-01', 'Dec-01', 'Mar-02', 'Jun-02', 'Sep-02', 'Dec-02', 'Mar-03', '11-2', 'Sep-03', 'Dec-03', 'Mar-04', 'Jun-04', 'Sep-04', 'Dec-04', 'Mar-05', 'Jun-05', 'Sep-05', 'Dec-05', 'Mar-06', 'Jun-06', '11-3', 'Dec-06', 'Mar-07', 'Jun-07', 'Sep-07', 'Dec-07', 'Mar-08', 'Jun-08', 'Sep-08', 'Dec-08', 'Mar-09', 'Jun-09', 'Sep-09', '11-4', 'Mar-10', 'Jun-10', 'Sep-10', 'Dec-10', 'Mar-11', 'Jun-11', 'Sep-11', 'Dec-11', 'Mar-12', 'Jun-12', 'Sep-12', 'Dec-12', '11-5', 'Jun-13', 'Sep-13', 'Dec-13', 'Mar-14', 'Jun-14', 'Sep-14', 'Dec-14', 'Mar-15', 'Jun-15', 'Sep-15', 'Dec-15', 'Mar-16', '11-6', 'Sep-16', 'Dec-16', 'Mar-17', 'Jun-17', 'Sep-17']
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value} %'
+            }
+        },
+        series: [{
+                name: 'China',
+                type: 'line',
+                symbol:'none',
+                data: [0.3, 0.8, 0.6, 1.5, 1.8, 1.4, 1.3, 1.7, 2.5, 4, 3.6, 3.9, 4.5, 3.6, 2.6, 2.8, 4, 3.5, 3.4, 5.3, 6, 6,
+                 7.8, 7.8, 10.9, 9.4, 10.3, 9.6, 11.8, 8.6, 9.1, 8.8, 11.3, 9.2, 9.4, 8.9, 10, 7.4, 7.4, 5.7, 6.7, 4.9, 3.9,
+                  5.5, 4.5, 2.6, 1.7, 2.6, 3.9, 3.5, 0.6, 1.6, 1.8, 1.7, 0.9, -0.1, -0.1, -1.4, -2.8, -3, -2.8, -3.5, -4.4,
+                   -3.5, -3.4, -5.1, -5, -7.7, -6.1, -8.9, -7.8],
+                markPoint: {
+                    label: {
+                        show: true,
+                        formatter: '{c}%'
+                    }
+                },
+                lineStyle:{
+                    normal:{
+                        width:1
+                    }
+                }
+            }
+        ]
+    };
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
+    </script>
+    <div class="fanhuitop"><img src="images/fanhuitop.png"></div>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
